@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NATBIS R-E CAPTCHA</title>
+    <link rel="stylesheet" href="NATBIS R-E COM.css">
+</head>
+<body oncontextmenu="return false;">
+    <div class="container">
+        <div id="timeDisplay" class="time-display"></div>
+        <div class="captcha-box">
+            <h2>NATBIS R-E</h2>
+            <p>Verifikasi bahwa Anda adalah manusia:</p>
+            <div class="challenge-area">
+                <canvas id="captchaCanvas"></canvas>
+                <p id="challengeText" class="noselect"></p>
+            </div>
+            <input type="text" id="userInput" placeholder="Ketik kata-kata di atas...">
+            <button id="refreshButton">Segarkan Kalimat captcha</button>
+            <div class="mouse-challenge">
+                <h3>Verifikasi Gerakan Mouse:</h3>
+                <p id="mouseInstructions"></p>
+                <div id="mouseArea"></div>
+            </div>
+            <button id="verifyButton" disabled>Verifikasi</button>
+            <div id="message"></div>
+            <div id="loadingOverlay" class="loading-overlay">
+                <div class="loader"></div>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 NATBIS R-E. All rights reserved.</p>
+    </div>
+    <script src="NATBIS R-E COM.js"></script>
+</body>
+</html>
